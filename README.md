@@ -14,7 +14,7 @@ A simple and visually styled web application that allows users to efficiently **
 
 ### Task Tracker
 - Add tasks with deadlines.
-- Mark tasks as `Completed` or `Pending`.
+- Mark tasks as "Completed" or "Pending"
 - View and manage tasks in a color-coded table.
 - See live counts for completed and total tasks.
 - Delete tasks when no longer needed.
