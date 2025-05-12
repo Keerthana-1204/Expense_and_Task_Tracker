@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Expense and Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head> 
+
+<body>
+
+    <header>
+        <h1>Expense and Task Tracker</h1>
+    </header>
+
+<!----Expense Tracker Section----->
+
+    <main>
+        <section id="ExpenseTracker">
+            <h2>Expense Tracker</h2>
+            <div class="Expense-Container">
+                <form id="expense-form">
+                <div class="form-group">
+                <label for="expense-name" >Expense Name</label>
+                <input type="text" id="expense-name" required placeholder="Description">
+                </div>
+                
+                <div class="form-group">
+                <label for="expense-amount" >Amount</label>
+                <input type="number" id="expense-amount" required placeholder="Amount">
+                </div>
+                <div class="form-group">
+                <button type="submit">Add Expense</button>
+                </div>
+                </form>
+                <div id="expense-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Expense Name</th>
+                            <th>Amount</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expense-table-body">
+                        <!-- Expense items will be dynamically added here -->
+                    </tbody>
+                </table>
+                <h3>Total Expense: $<span id="total-amount">0.00</span></h3>
+                </div>
+            </div>
+        </section>
+
+<!-----Task Tracker Section----->
+
+        <section id="TaskTracker">
+            <h2>Task Tracker</h2>
+            <div class="Task-Container">
+                <form id="task-form">
+                <div class="form-group">
+                <label for="task-name">Task Name</label>
+                <input type="text" id="task-name" required placeholder="Task Name">
+                </div>
+                <div class="form-group">
+                <label for="task-deadline">Deadline</label>
+                <input type="date" id="task-deadline" required>
+                </div>
+                <div class="form-group">
+                <button type="submit">Add Task</button>
+                </div>
+                </form>
+                <div id="task-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Task Name</th>
+                            <th>Deadline</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="task-table-body">
+                        <!-- Task items will be dynamically added here -->
+                    </tbody>    
+                </table>
+                <h3>Completed Tasks: <span id="completed-tasks">0</span></h3>
+                <h3>Total Tasks: <span id="total-tasks">0</span></h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Expense and Task Tracker</p>
+        <p>All rights reserved</p>
+    </footer>
+
+</body> 
+
+</html>
